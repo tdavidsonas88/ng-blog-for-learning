@@ -18,4 +18,8 @@ export class AppComponent {
   }
   arr=['Bruce', 'Tonny', 'Peter'];
   siteUrl = window.location.href;
+
+  myEvent(evt) {
+    console.warn(evt);
+  }
 }

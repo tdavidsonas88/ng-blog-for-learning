@@ -8,7 +8,21 @@
 <h2>{{ arr.length }}</h2>
 <h2>{{ siteUrl }}</h2>
 <h2>{{ 10+10 }}</h2>
-<button (click)="getName(myName)">Get my name</button>
+<button (click)="getName(myName)">Get my name</button><br><br>
+
+<button (click)="myEvent('test123')">Click me</button><br><br>
+
+<input type="text" #box (keyup.enter)="myEvent(box.value)"><br><br>
+
+<input type="text" #box (blur)="myEvent('blur event')"><br><br>
+
+<h1 (mouseover)="myEvent('mouseover')" style="background-color: skyblue;">
+    Mouse event
+</h1>
+
+<h1 (mouseleave)="myEvent('mouseleave')" style="background-color: red;">
+    Mouse event
+</h1>
 
 <app-user-list></app-user-list>
 
@@ -16,3 +30,4 @@
 
 <app-login></app-login>
 <app-signup></app-signup>
+
