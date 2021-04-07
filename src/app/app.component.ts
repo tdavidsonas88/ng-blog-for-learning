@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'blog';
+  currentVal = "";
+  getVal(val)
+  {
+    console.warn(val);
+    this.currentVal = val;
+  }
   appName = 'blog app';
   name = 'bruce';
   myName = 'Tadas';
