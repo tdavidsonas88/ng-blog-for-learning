@@ -6,6 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  disabledBox = true;
+  enableBox()
+  {
+    this.disabledBox = false;
+  }
+  property='Robin';
+
   title = 'blog';
   currentVal = "";
   getVal(val)

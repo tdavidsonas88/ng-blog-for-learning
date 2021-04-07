@@ -1,4 +1,12 @@
 
+<h1>Property Binding in Angular</h1>
+<input type="text" [disabled]="disabledBox" [value]="property">
+<br><br>
+<input type="text" disabled={{disabledBox}} value="{{property}}">
+<br><br>
+<button (click)="enableBox()">Enable TextBox</button>
+
+
 <h1>Get TextBox value in Angular</h1>
 <input type="text" #box (keyup)="getVal($event.target.value)" />
 <button (click)="getVal(box.value)">Get Value</button>
